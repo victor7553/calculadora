@@ -17,7 +17,7 @@ public class Calculadora {
 		String operacao = sc.next();
 		
 		
-		double resultado = "+".equals(operacao) ? num1 + num2 : 0;
+		double resultado = "+".equals(operacao) ? soma(num1, num2) : 0;
 		resultado = "-".equals(operacao) ? num1 - num2 : resultado;
 		resultado = "*".equals(operacao) ? num1 * num2 : resultado;
 		resultado = "/".equals(operacao) ? num1 / num2 : resultado;
@@ -29,6 +29,10 @@ public class Calculadora {
 		
 		
 		sc.close();
+	}
+
+	public static double soma(double a, double b) {
+		return a + b;
 	}
 
 }
